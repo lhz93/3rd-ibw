@@ -1,0 +1,701 @@
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+        <title>第三届深圳国际品牌周</title>
+        <meta name="description" content="深圳品牌 共赢大湾区">
+        <meta name="keywords" content="深圳国际品牌周,品牌周,深圳知名品牌,中国500强,成果发布会,颁奖典礼,品牌建设高端论坛,品牌,论坛" >
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/computer.css">
+        <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <script type="text/javascript" src="./javascript/jquery.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="./javascript/html5shiv.min.js"></script>
+        <script src="./javascript/respond.min.js"></script>
+        <![endif]-->
+        
+        <script type="text/javascript" src="./javascript/jweixin-1.3.2.js"></script>
+        <script>
+            wx.miniProgram.getEnv(function(res) {
+                console.log(res.miniprogram) // true
+                wx.miniProgram.navigateTo({url:'../index/index'})
+            })
+        </script>
+        <style type="text/css">
+        .introduce_click_img {
+            cursor: pointer;
+        }
+        .introduce_click {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            z-index: 99;
+            background: rgba(0,0,0,0.8);
+            display: none;
+        }
+        .introduce_click_box {
+            position: relative;
+        }
+        .introduce_click_box img {
+            max-height: 100vh;
+        }
+        .introduce_click_button {
+            position: absolute;
+            top: 0;
+            right: -20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            background: #ccc;
+            cursor: pointer;
+        }
+        .introduce_click_button::after,
+        .introduce_click_button::before {
+            content: '';
+            position: absolute;
+            transition: all 0.3s;
+            left: 50%;
+            top: 50%;
+            width: 1px;
+            height: 28px;
+            background: #fff;
+            margin-top: -14px;
+        }
+        .introduce_click_button::after {}
+        .introduce_click_button::before {
+            -webkit-transform: rotate(90deg);
+               -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                 -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
+        }
+        .introduce_click_button:hover {
+            background: #333;
+        }
+        .introduce_click_button:hover::before {
+            -webkit-transform: rotate(0);
+               -moz-transform: rotate(0);
+                -ms-transform: rotate(0);
+                 -o-transform: rotate(0);
+                    transform: rotate(0);
+        }
+
+        </style>
+    </head>
+
+    <body>
+    <div id="page-wrapper" class="page-wrapper">
+        
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" href="/./favicon.ico" type="image/x-icon" />
+<header class="header-box">
+        <div class="logo">
+            <div class="container">
+                <a href=""><img src="./image/logo.png" alt="" /></a>
+            </div>
+            <div class="logo_bg"></div>
+        </div>
+        <div class="header-language">
+              <div class="container">
+                    <div  class="pull-right" id="sign">
+                        <a href="#" >参会报名</a>
+                    </div>
+        </div>
+      
+        <!-- 导航 -->
+        <div class="header-menu">
+            <div class="header-nav hidden-xs hidden-sm">
+                <div class="container">
+                    <ul class="pull-right">
+                        <li><a href="http://www.sztopbrand.com/brand5/2019-04-12/301.html" target="blank">关于品牌周</a></li>
+                        <li><a href="#news">新闻中心</a></li>
+                        <li><a href="#main">主场活动</a></li>
+                        <li><a href="#zc">专题活动</a></li>
+                        <li><a href="#10qu">十区活动</a></li>
+                        <li><a href="#organization">组织机构</a></li>
+                        <li><a href="#media">合作媒体</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 手机 -->
+            <a href="#mm-main-mmenu" class="menu_botton clearfix" id="menu_toggle1"> 
+              <strong>菜单</strong> 
+              <span></span> 
+            </a>
+        </div>
+        <!-- 导航结束 -->
+
+
+<!-- 手机导航开始 -->
+<div class="main-navigation-section section">
+    <div class="section-outer">
+        <div class="section-inner">
+            <div id="main-navigation-content" class="main-navigation-content">
+                <div class="region region-navigation">
+                    <div id="block-system-main-menu" class="block block-system block-menu block-system-main-menu">
+                        <div class="content" id="main-mmenu">
+                            <ul class="menu">
+                                <li class="expanded"><a href="http://www.sztopbrand.com/brand5/2019-04-12/301.html" target="blank">关于品牌周</a></li>                        
+                                <li class="expanded"><a href="index.html#news">新闻中心</a></li>
+                                <li class="expanded"><a href="index.html#main">主场活动</a></li>
+                                <li class="expanded"><a href="index.html#zc">专题活动</a></li>
+                                <li class="expanded"><a href="index.html#10qu">十区活动</a></li>
+                                <li class="expanded"><a href="index.html#organization">组织机构</a></li>
+                                <li class="expanded"><a href="index.html#media">合作媒体</a></li>
+                                <li class="expanded"><a href="index.html#contact">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 手机导航结束 -->
+</header>
+
+<!-- #EndLibraryItem -->
+
+<div id="banner">
+        <div class="banner">
+            <ul class="bannerfix clearfix">
+                <li>
+
+
+                    <a class="hidden-sm hidden-xs" href="" target="_block"><img class="bimg" src="./image/banner.jpg" alt="" /></a>
+                    
+<a class="visible-sm visible-xs web_onclick_register"><img class="bimg" src="./image/banner.jpg" alt="" /></a>
+                    
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="home-time text-center">
+        距<span class="color_ffe401">2019年5月9日</span>开幕还有&nbsp;&nbsp;<span class="color_ffe401 time_bg remain_day">0</span>天<span class="color_ffe401 time_bg remain_time">0</span>时<span  class="color_ffe401 time_bg remain_branch">0</span>分<span  class="color_ffe401 time_bg remain_second">0</span>秒
+    </div>
+    <div class="home-news" id="news">
+        <div class="container">
+            <div class="h-title">
+                <div class="h-title-box">新闻中心</div>
+                <div class="home-news-tab">
+                    <div class="active"><a>新闻资讯</a></div>
+                    <div><a>品牌动态</a></div>
+                </div>
+            </div>
+            <div class="home-news-box smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+                <!-- 1 -->
+                <div class="clearfix home-news-list active">
+<div class="home-news-img col-xs-12 col-md-6">
+    <div class="home-news-swiper swiper-container">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                 <a  href="http://www.sztopbrand.com/news/2018-05-21/284.html" target="blank">
+                 <div class="img" style="background-image: url(image/pic1.jpg)"></div>
+                 <p>第二届深圳国际品牌周回顾</p>
+                </a>
+            </div>
+                                  
+            <div class="swiper-slide">
+                <a  href="http://www.sztopbrand.com/news/2018-05-10/281.html" target="blank">
+                <div class="img" style="background-image: url(image/pic2.jpg)"></div>
+                <p>第二届深圳国际品牌周开幕大会</p>
+               </a>
+           </div>
+                         
+        </div>
+        <div class="swiper-button-prev swiper-button-white home-news-prev"></div>
+        <div class="swiper-button-next swiper-button-white home-news-next"></div>
+    </div>
+</div>
+<div class="home-news-con col-xs-12 col-md-6">
+    <div class="display-flex display-flex-center">
+        <ul>
+            
+             <li>
+                <h3><a href="http://www.sztopbrand.com/news/2019-04-03/297.html" target="blank">第三届深圳国际品牌周即将启幕 助力大湾区经济发展</a></h3>
+                <p>一年一度的博鳌亚洲论坛刚刚落幕，粤港澳大湾区再一次成为焦点...</p>
+            </li>
+            
+             <li>
+                <h3><a href="http://www.sztopbrand.com/news/2018-12-03/289.html" target="blank">打造深圳质量品牌主力军 推动深圳知名品牌走向世界</a></h3>
+                <p>面对经济全球化、市场国际化的竞争环境，世界已经进入品牌竞争时代...</p>
+            </li>
+            
+             <li>
+                <h3><a href="http://www.sztopbrand.com/news/2019-02-18/295.html"  target="blank">2019全球品牌500强公布 中国品牌价值突破1万亿美元</a></h3>
+                <p>1月22日，英国知名品牌价值咨询公司Brand Finance发布了“2019年全球品牌500强”报告，中国上榜品牌总价值首次突破1万亿美元...</p>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+                </div>
+                <!-- 2 -->
+                <div class="clearfix home-news-list">
+<div class="home-news-img col-xs-12 col-md-6">
+    <div class="home-news-swiper swiper-container">
+        <div class="swiper-wrapper">
+
+
+            
+        </div>
+
+        
+        <div class="swiper-button-prev swiper-button-white home-news-prev"></div>
+        <div class="swiper-button-next swiper-button-white home-news-next"></div>
+    </div>
+</div>
+<div class="home-news-con col-xs-12 col-md-6">
+    <div class="display-flex display-flex-center">
+        <ul>
+        </ul>
+    </div>
+</div>
+</div>
+            </div>
+            <div class="more smoove_block" data-rotate-x="90deg" data-move-z="-300px" data-move-y="100px">
+                <a href="http://www.sztopbrand.com/" target="blank">了解更多</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="h-title">
+            <div class="h-title-box">主场活动</div>
+        </div>
+        <div class="audience-swiper swiper-container">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide" style="background-image: url(image/banner1.jpg)">
+                </div>
+                
+                <div class="swiper-slide" style="background-image: url(image/banner2.jpg)">
+                </div>
+                
+                <div class="swiper-slide" style="background-image: url(image/coming_bg.jpg)">
+                </div>
+                
+            </div>
+            <div class="swiper-button-prev swiper-button-white audience-prev"></div>
+            <div class="swiper-button-next swiper-button-white audience-next"></div>
+        </div>
+    </div>
+
+   
+    <div class="home-experience" id="zc">
+            <div class="container">
+                <div class="col-md-12 col-xs-12 brand smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+                    <div class="h-title">
+                            <div class="h-title-box">专场活动</div>
+                    </div>
+                    <div class="bg_fff display-flex">
+                        <div class="text">
+                            <ul class="experience-list">
+                                <li><a class="hidden-sm hidden-xs" href="http://www.sztopbrand.com/announce/2019-04-08/299.html" target="blank">第三届深圳国际品牌周“国货精品”推广节</a></li>
+                                <li><a class="hidden-sm hidden-xs" href="http://www.sztopbrand.com/announce/2019-04-04/298.html" target="blank">品牌海报设计与品牌传播微视频经典案例巡展</a></li>
+                                <li><a class="hidden-sm hidden-xs" href="http://www.sztopbrand.com/announce/2019-04-11/300.html" target="blank">深圳市2019年度中小企业产业紧缺人才培训专场</a></li>
+                                <li><a class="hidden-sm hidden-xs" href="#" target="blank">品牌营销案例报告专场</a></li>
+                                <li><a class="hidden-sm hidden-xs" href="#" target="blank">市消委会专场</a></li>
+                                <li><a class="hidden-sm hidden-xs" href="" target="blank">市国际交流基金会专场</a></li>
+                                <li><a class="hidden-sm hidden-xs" href="" target="blank">“万利连锁·品牌强国”连锁节专场</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="img">
+                            <img src="image/p1.jpg" width="100%" height="100%">
+                            <!-- <div class="brand-swiper swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image: url(image/p1.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image: url(image/p2.jpg)"></div>
+                                </div>
+                                <div class="swiper-button-prev swiper-button-white audience-prev"></div>
+                                <div class="swiper-button-next swiper-button-white audience-next"></div>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="home-qu" id="10qu">
+        <div class="container">
+            <div class="h-title">
+                <div class="h-title-box">十区活动</div>
+            </div>
+            <ul class="col-md-12 col-xs-12 qu-list">
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu1.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu2.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu3.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu4.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu5.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu6.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu7.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu8.jpg"></a></li>
+                <li class="col-md-3 col-md-offset-3 col-xs-6"><a href=""><img src="image/qu9.jpg"></a></li>
+                <li class="col-md-3 col-xs-6"><a href=""><img src="image/qu9.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+   
+    <div class="home-organization" id="organization">
+        <div class="container">
+            <div class="h-title">
+                <div class="h-title-box">主办机构</div>
+            </div>
+            <ul class="col-md-3 col-xs-6 organization-list">
+                <li><b>指导单位</b></li>
+                <li>联合国工业发展组织</li>
+                <li>中国工业经济联合会</li>
+                <li>&nbsp;</li>
+                <li><b>支持单位</b></li>
+                <li>联合国海陆丝绸之路城市联盟</li>
+                <li>联合国工业发展组织中国南南工业合作中心</li>
+                <li>中共深圳市委宣传部</li>
+                <li>深圳市人民政府外事办公室</li>
+                <li>深圳市人民政府发展研究中心</li>
+                <li>《中国名牌》杂志社</li>
+                <li>《中国品牌》杂志社</li>
+                <li>&nbsp;</li>
+                <li><b>主办单位</b></li>
+                <li>深圳市发展和改革委员会</li>
+                <li>深圳市工业和信息化局</li>
+            </ul>
+            <ul class="col-md-3 col-xs-6 organization-list">
+                <li>深圳市商务局</li>
+                <li>深圳市市场监督管理局</li>
+                <li>深圳市知识产权局</li>
+                <li>&nbsp;</li>
+                <li><b>执行主办</b></li>
+                <li>深圳工业总会</li>
+                <li>&nbsp;</li>
+                <li><b>联合主办单位</b></li>
+                <li>福田区人民政府</li>
+                <li>罗湖区人民政府</li>
+                <li>盐田区人民政府</li>
+                <li>南山区人民政府</li>
+                <li>宝安区人民政府</li>
+                <li>龙岗区人民政府</li>
+                <li>龙华区人民政府</li>
+                <li>坪山区人民政府</li>
+            </ul>
+            <ul class="col-md-3 col-xs-6 organization-list">
+                <li>光明区人民政府</li>
+                <li>大鹏新区管理委员会</li>
+                <li>Brand Finance（中国）公司</li>
+                <li>深圳报业集团</li>
+                <li>深圳广播电影电视集团</li>
+                <li>深圳市消费者委员会</li>
+                <li>深圳市零售商业行业协会</li>
+                <li>深圳市国际交流合作基金会</li>
+                <li>深圳知名品牌评价委员会</li>
+                <li>深圳市企业品牌建设促进会</li>
+                <li>&nbsp;</li>
+                <li><b>承办单位</b></li>
+                <li>深圳广播电影电视集团财经生活频道</li>
+                <li>深圳工业总会执行局</li>
+                <li>&nbsp;</li>
+                <li><b>各区承办单位</b></li>
+            </ul>
+            <ul class="col-md-3 col-xs-6 organization-list">
+                <li>福田区经济促进局</li>
+                <li>罗湖区经济促进局</li>
+                <li>盐田区经济促进局</li>
+                <li>南山区经济促进局</li>
+                <li>宝安区经济促进局</li>
+                <li>龙岗区经济促进局</li>
+                <li>龙华区经济促进局</li>
+                <li>坪山区经济和科技促进局</li>
+                <li>光明区经济服务局</li>
+                <li>大鹏新区经济服务局</li>
+                <li>&nbsp;</li>
+                <li><b>联合承办单位</b></li>
+                <li>深圳市逸马商业服务有限公司</li>
+                <li>&nbsp;</li>
+                <li><b>首席品牌策划机构</b></li>
+                <li>深圳市采纳品牌营销顾问有限公司</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="home-cooperation" id="media">
+        <div class="container">
+            <div class="h-title">
+                <div class="h-title-box">合作媒体</div>
+            </div>
+            <div class="home-cooperation-box">
+                <!-- 1 -->
+                <div class="home-cooperation-list active">
+<div class="swiper-container">
+    <ul class="swiper-wrapper">
+        
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/1.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/2.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/3.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/4.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/5.png" alt="" /></a></li>
+
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/7.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/8.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/9.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/6.png" alt="" /></a></li>        
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/22.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/10.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/11.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/12.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/13.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/14.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/15.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/16.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/17.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/18.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/19.png" alt="" /></a></li>
+
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/21.png" alt="" /></a></li>
+
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/23.png" alt="" /></a></li>
+        <li class="swiper-slide"><a><img class="smoove_block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px" src="image/logo/24.png" alt="" /></a></li>
+        
+       
+    </ul>
+    <div class="swiper-button-prev cooperation-prev"></div>
+    <div class="swiper-button-next cooperation-next"></div>
+</div>
+                </div>
+                <!-- 2 -->
+                <div class="home-cooperation-list">
+<div class="swiper-container">
+    <ul class="swiper-wrapper">
+
+        
+
+       
+    </ul>
+    <div class="swiper-button-prev cooperation-prev"></div>
+    <div class="swiper-button-next cooperation-next"></div>
+</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- #BeginLibraryItem "/Footer.lbi" -->
+        
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <div class="right_muen">
+        <ul>
+            <!-- <li>
+               <a href="">
+                   <div class="title">品</div>
+                   <div class="title-box">深圳国际品牌周标识</div>
+               </a>
+            </li>
+            <li>
+               <a href="">
+                   <div class="title">吉</div>
+                   <div class="title-box">深圳国际品牌周吉祥物</div>
+               </a>
+            </li> -->
+            <!-- <li class="right_muen_cloud">
+               <a href="">
+                   <div class="title"></div>
+                   <div class="title-box">下载中心</div>
+               </a>
+            </li> -->
+            <li class="right_muen_wechat">
+               <div class="title"></div>
+                <div class="title-box">
+                    <div class="clearfix">
+                            <img src="./image/wechat01.png" alt="" />
+                            <p>服务号</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <div class="container footer-con">
+            <div id="contact" class="col-md-4 col-xs-6">
+                <div class="footer-title">
+                    <h3>联系我们</h3>
+                </div>
+                <ul>
+                    <li>地址：深圳市福田区华富路1004号南光大厦十楼东侧</li>
+                    <li>电话：0755-83688772</li>
+                    <li>传真：0755-83688744</li>
+                    <li><a href="mailto:sfie@sfie.org.cn">E-mail:sfie@sfie.org.cn</a></li>
+                </ul>
+            </div>
+            <div id="about-us" class="col-md-4 col-xs-6">
+                <div class="footer-title">
+                    <h3>关于我们</h3>
+                </div>
+                <p>深圳知名品牌是深圳工业总会按照深府[2003]64号文件委托工作事项的要求，与25个政府机构、69个行业协会、3个研究机构、11个专业机构和两大传媒集团共同搭建全国唯一的推进品牌建设的政社合作平台——深圳知名品牌评价委员会。</p>
+            </div>
+            <div id="about" class="col-md-4 col-xs-12">
+                <ul>
+                    <li>主办单位：深圳知名品牌评价委秘书处</li>
+                    <li>版权所有：深圳工业总会</li>
+                    <li>备案序号：粤ICP备11065159-3号</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<div class="web_alret">
+    <div class="web_alret_title">暂未开放</div>
+    <div class="web_alret_button">确定</div>
+</div>
+
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        // $('header .header-nav li>a').eq(1).click(function(event) {
+        //     $('.web_alret').addClass('active');
+        // });
+        // $('header .header-nav li>a').eq(4).click(function(event) {
+        //     $('.web_alret').addClass('active');
+        // });
+
+        $('header .header-language #sign').click(function(event) {
+        $('.web_alret').addClass('active');
+        });
+
+        $('.web_alret_button').click(function(event) {
+            $('.web_alret').removeClass('active');
+            $('.web_alret_sigin').removeClass('active');
+            $('.web_alret_register').removeClass('active');
+        });
+        $('.web_onclick_sigin').click(function(event) {
+            $('.web_alret_sigin').addClass('active');
+        });
+        $('.web_onclick_register').click(function(event) {
+            $('.web_alret_register').addClass('active');
+        });
+
+        $('header .header-nav li').eq(0).find('.second-level-box>div').eq(1).find('a').attr('href', '#');
+        $('header .header-nav li').eq(1).find('.second-level-box>div').eq(1).find('a').attr('href', '#');
+        $('header .header-nav li').eq(1).find('.second-level-box>div').eq(2).find('a').attr('href', '#');
+        $('header .header-nav li').eq(1).find('.second-level-box>div').eq(3).find('a').attr('href', '#');
+
+        $('header .header-nav li').eq(2).find('.second-level-box>div').eq(0).find('a').attr('href', '#');
+        $('header .header-nav li').eq(2).find('.second-level-box>div').eq(1).find('a').attr('href', '#');
+        $('header .header-nav li').eq(2).find('.second-level-box>div').eq(2).find('a').attr('href', '#');
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?0d1031f7c74d8a4a33cac86fce2fc8f4";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+        
+
+<!-- #EndLibraryItem -->
+</div>
+
+<script type="text/javascript" src="./javascript/plugin.js"></script>
+<script type="text/javascript" src="./javascript/index.js"></script>
+<script type="text/javascript" src="./javascript/page.js"></script>
+<!-- <script type="text/javascript">
+    //设置cookie
+    function close_warn(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+        $('.affirm-header').slideUp(2000)
+        checkNotifcationCookie()
+    }
+    //获取cookie
+    function getNotifcationCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+    //设置是否接受Cookies
+    function checkNotifcationCookie(){
+        var cookiesH = $('.cookies').height();
+        if ($(window).width() > 991) {
+            $('.header-box').css('top', cookiesH);
+        } else {
+            $('.header-box').css('top', '');
+        };
+        if(getNotifcationCookie("cookie-notification")=="1"){
+            $('.affirm-header').slideUp(2000);
+            $('.header-box').css('top', '');
+        }
+    }
+    checkNotifcationCookie();
+
+    jQuery(document).ready(function($) {
+        $('.introduce_click_img').click(function(event) {
+           $('.introduce_click').show();
+           $('html,body').css('overflow', 'hidden');
+        });
+        $('.introduce_click_button').click(function(event) {
+           $('.introduce_click').hide();
+           $('html,body').css('overflow', '');
+        });
+    });
+</script> -->
+<script type="text/javascript">
+    $(function(){
+        var now=new Date();
+        var end=new Date(2019,4,9,0,0,00);//结束的时间：年，月，日，分，秒（月的索引是0~11）
+        /*两个时间相减,得到的是毫秒ms,变成秒*/
+        var result=Math.floor(end-now)/1000; 
+        
+        var interval=setInterval(sub,1000); //定时器 调度对象
+        /*封装减1秒的函数*/
+        function sub(){
+            if (result>1) {
+               result = result - 1; 
+               var second = Math.floor(result % 60);     // 计算秒 ，取余  
+               var minite = Math.floor((result / 60) % 60); //计算分 ，换算有多少分，取余，余出多少秒
+               var hour = Math.floor((result / 3600) % 24); //计算小时，换算有多少小时，取余，24小时制除以24，余出多少小时
+               var day = Math.floor(result / (3600*24));  //计算天 ，换算有多少天
+               $('.remain_day').html(day);
+               $('.remain_time').html(hour);
+               $('.remain_branch').html(minite);
+               $('.remain_second').html(second);
+            } else{
+                alert("第三届深圳国际品牌周开幕啦！");
+                window.clearInterval(interval);//这里可以添加倒计时结束后需要执行的事件 
+            }
+        };
+    });
+</script>
+    </body>
+</html>
+
