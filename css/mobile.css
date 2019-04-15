@@ -17,6 +17,7 @@
     }
 }
 @media screen and (max-width: 1459px) {
+
     header .logo:after {
         left: -5%;
     }
@@ -738,9 +739,26 @@
         position: relative;
     }
 }
-@media screen and (max-width: 641px) {}
+@media screen and (max-width: 641px) {
+}
 @media screen and (max-width: 580px) {}
-@media screen and (max-width: 540px) {}
-@media screen and (max-width: 481px) {}
-@media screen and (max-width: 380px) {}
-@media screen and (max-width: 340px) {}
+@media screen and (max-width: 540px) {
+    .organization-list{
+        height: 42em;
+    }
+}
+@media screen and (max-width: 481px) {    
+    .organization-list{
+    height: 45em;
+    }
+}
+@media screen and (max-width: 380px) {    
+    .organization-list{
+    height: 50em;
+    }
+}
+@media screen and (max-width: 340px) {    
+    .organization-list{
+    height: auto;
+    }
+}
