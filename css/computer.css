@@ -946,7 +946,7 @@ footer .footer-copyright a {
   width: 49.71%;
 }
 .audience-swiper .swiper-slide {
-  height: 600px;
+  /* height: 600px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
